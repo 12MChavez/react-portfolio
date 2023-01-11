@@ -1,16 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const Nav = () => {
+import { Navbar } from "react-bulma-components";
+const Footer = () => {
   return (
     <div>
-      <li>
-        <Link to="/">LinkedIn</Link>
-      </li>
-      <li>
-        <Link to="/resume">GitHub Profile</Link>
-      </li>
-      <p>Made with love, react, and bulma.</p>
+      <Navbar className="navbar left-margin">
+        <Navbar.Menu>
+          <Navbar.Container>
+            <a
+              href="https://www.linkedin.com/in/melissac-dev/"
+              className="navbar-item"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/12MChavez"
+              className="navbar-item"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Profile
+            </a>
+
+            <p className="navbar-item">Made with love, react, and bulma.</p>
+          </Navbar.Container>
+        </Navbar.Menu>
+      </Navbar>
     </div>
   );
 };
-export default Nav;
+export default Footer;
