@@ -7,20 +7,9 @@ import validator from "validator";
 let nameStatus = false;
 let emailValue;
 let emailStatus = false;
-
 let msgStatus = false;
 
-const setNameAdded = (evt) => {
-  let name = evt.target.value;
-
-  if (name.length > 0) {
-    console.log("true");
-    nameStatus = true;
-  } else {
-    nameStatus = false;
-  }
-};
-
+// use validator to check for valid email
 const setEmailStatus = (evt) => {
   emailValue = evt.target.value;
 
@@ -32,17 +21,31 @@ const setEmailStatus = (evt) => {
   }
 };
 
-const setMessageAdded = (evt) => {
-  let message = evt.target.value;
+// check to see if name and message were added
+const setValueAdded = (evt) => {
+  let value = evt.target.value;
+  let elId = evt.target.id;
+  console.log(evt.target.id);
 
-  if (message.length > 0) {
-    console.log("true");
-    msgStatus = true;
-  } else {
-    msgStatus = false;
+  switch (elId) {
+    case "name":
+      if (value.length > 0) {
+        nameStatus = true;
+      } else {
+        nameStatus = false;
+      }
+      break;
+    case "msg":
+      if (value.length > 0) {
+        msgStatus = true;
+      } else {
+        msgStatus = false;
+      }
+      break;
   }
 };
 
+// if form is filled out the submit button will show
 function showSubmit() {
   const submitBtn = document.getElementById("submitBtn");
   console.log(emailStatus, msgStatus, nameStatus);
@@ -61,9 +64,10 @@ const Contact = (
         <Form.Label>Name: </Form.Label>
         <Form.Control>
           <Form.Input
+            id="name"
             color="success"
             placeholder="Name"
-            onChange={(evt) => setNameAdded(evt)}
+            onChange={(evt) => setValueAdded(evt)}
           />
           <Form.Label>Email: </Form.Label>
           <Form.Help color="danger">
@@ -79,9 +83,10 @@ const Contact = (
           />
           <Form.Label>Message: </Form.Label>
           <Form.Textarea
+            id="msg"
             color="success"
             placeholder="Message"
-            onChange={(evt) => setMessageAdded(evt)}
+            onChange={(evt) => setValueAdded(evt)}
           />
           <Button
             type="submit"
