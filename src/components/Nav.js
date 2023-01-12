@@ -38,6 +38,9 @@ const Nav = () => {
             <Link to="/contact" className="navbar-item">
               Contact
             </Link>
+            <Link to="/portfolio" className="navbar-item">
+              Portfolio
+            </Link>
           </Navbar.Container>
         </Navbar.Menu>
         <Navbar.Burger id="menuBurger" onClick={() => isActive()} />
