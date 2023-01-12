@@ -1,33 +1,44 @@
 import React from "react";
-import { Navbar } from "react-bulma-components";
-const Footer = () => {
+import { Hero, Footer, Container, Content } from "react-bulma-components";
+const FooterC = () => {
   return (
-    <div>
-      <Navbar className="navbar left-margin">
-        <Navbar.Menu>
-          <Navbar.Container>
-            <a
-              href="https://www.linkedin.com/in/melissac-dev/"
-              className="navbar-item"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/12MChavez"
-              className="navbar-item"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Profile
-            </a>
+    <div style={{ margin: "-1rem" }}>
+      <Hero size="halfheight">
+        <Hero.Header renderAs="header" />
 
-            <p className="navbar-item">Made with love, react, and bulma.</p>
-          </Navbar.Container>
-        </Navbar.Menu>
-      </Navbar>
+        <Hero.Footer>
+          <Footer>
+            <Container>
+              <Content style={{ textAlign: "center" }}>
+                <div>
+                  <strong>
+                    <p className="navbar-item">
+                      Made with love, react, and bulma.
+                    </p>
+                  </strong>{" "}
+                  <a
+                    href="https://www.linkedin.com/in/melissac-dev/"
+                    className="navbar-item"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/12MChavez"
+                    className="navbar-item"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub Profile
+                  </a>
+                </div>
+              </Content>
+            </Container>
+          </Footer>
+        </Hero.Footer>
+      </Hero>
     </div>
   );
 };
-export default Footer;
+export default FooterC;

@@ -1,7 +1,7 @@
 import React from "react";
 import "../bulma/css/bulma.min.css";
 import { Hero, Container, Heading } from "react-bulma-components";
-import Footer from "../components/Footer";
+import FooterC from "../components/Footer";
 const AboutMe = (
   <div>
     <Hero>
@@ -17,7 +17,7 @@ const AboutMe = (
         </Container>
       </Hero.Body>
     </Hero>
-    <Footer />
+    <FooterC />
   </div>
 );
 
