@@ -4,9 +4,11 @@ import { Container, Form, Button } from "react-bulma-components";
 import FooterC from "../components/Footer";
 import validator from "validator";
 
+let nameValue;
 let nameStatus = false;
 let emailValue;
 let emailStatus = false;
+let msgValue;
 let msgStatus = false;
 
 // use validator to check for valid email
@@ -31,15 +33,19 @@ const setValueAdded = (evt) => {
     case "name":
       if (value.length > 0) {
         nameStatus = true;
+        nameValue = evt.target.value;
       } else {
         nameStatus = false;
+        nameValue = evt.target.value;
       }
       break;
     case "msg":
       if (value.length > 0) {
         msgStatus = true;
+        msgValue = evt.target.value;
       } else {
         msgStatus = false;
+        msgValue = evt.target.value;
       }
       break;
   }
@@ -57,6 +63,16 @@ function showSubmit() {
     console.log("fill out form");
   }
 }
+
+// send your message via email
+function sendEmail() {
+  let subject = `${nameValue} sent msg from ${emailValue} using React Portfolio`;
+
+  window.open(
+    `mailto:mel.chavez.code@gmail.com?subject=${subject}&body=${msgValue}`
+  );
+}
+
 const Contact = (
   <div>
     <Container onChange={() => showSubmit()}>
@@ -67,6 +83,7 @@ const Contact = (
             id="name"
             color="success"
             placeholder="Name"
+            value={nameValue}
             onChange={(evt) => setValueAdded(evt)}
           />
           <Form.Label>Email: </Form.Label>
@@ -86,6 +103,7 @@ const Contact = (
             id="msg"
             color="success"
             placeholder="Message"
+            value={msgValue}
             onChange={(evt) => setValueAdded(evt)}
           />
           <Button
@@ -93,6 +111,7 @@ const Contact = (
             color="link"
             className="is-hidden"
             id="submitBtn"
+            onClick={() => sendEmail()}
           >
             Submit
           </Button>
