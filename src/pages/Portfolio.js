@@ -1,13 +1,17 @@
 import React from "react";
 import "../bulma/css/bulma.min.css";
-import Project from "../components/Project";
+import Project from "../components/Project/Project";
+import projectData from "../components/Project/projectData";
 
-const Portfolio = (
+//for each element in projectData, render a Project component with element of projectData
+const Portfolio = projectData && (
   <div>
     <div className="columns">
       <div className="column"></div>
     </div>
-    <Project />
+    {projectData.map((el) => (
+      <Project key={el.key} data={el} />
+    ))}
   </div>
 );
 
