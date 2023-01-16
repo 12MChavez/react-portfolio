@@ -7,7 +7,7 @@ const Project = ({ data }) => {
       <Card style={{ width: 300, margin: "auto" }}>
         <Card.Image
           size="4by3"
-          src={data.projectImage}
+          src={require(`./projectImages/${data.projectImage}.JPG`)}
           attr={data.projectImageAttr}
         />
         <Card.Content>

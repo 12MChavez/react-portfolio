@@ -48,6 +48,9 @@ const setValueAdded = (evt) => {
         msgValue = evt.target.value;
       }
       break;
+    default: {
+      break;
+    }
   }
 };
 
@@ -87,9 +90,7 @@ const Contact = (
             onChange={(evt) => setValueAdded(evt)}
           />
           <Form.Label>Email: </Form.Label>
-          <Form.Help color="danger">
-            Submit button will show when email entered
-          </Form.Help>
+
           <Form.Input
             color="success"
             type="email"
@@ -106,6 +107,10 @@ const Contact = (
             value={msgValue}
             onChange={(evt) => setValueAdded(evt)}
           />
+          <Form.Help color="danger">
+            Submit button will show when form completed with name, message, and
+            valid email.
+          </Form.Help>
           <Button
             type="submit"
             color="link"
