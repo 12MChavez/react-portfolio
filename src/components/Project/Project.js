@@ -3,7 +3,7 @@ import { Card, Media, Heading, Image, Content } from "react-bulma-components";
 // title, image, attr, projectGithub, projectDeployedURL
 const Project = ({ data }) => {
   return (
-    <div>
+    <div style={{ marginLeft: "auto", marginRight: "auto" }}>
       <Card style={{ width: 300, margin: "auto" }}>
         <Card.Image
           size="4by3"

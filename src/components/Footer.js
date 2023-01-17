@@ -2,7 +2,7 @@ import React from "react";
 import { Hero, Footer, Container, Content } from "react-bulma-components";
 const FooterC = () => {
   return (
-    <div style={{ margin: "-1rem" }}>
+    <div style={{ marginBottom: "0" }}>
       <Hero size="halfheight">
         <Hero.Header renderAs="header" />
 
