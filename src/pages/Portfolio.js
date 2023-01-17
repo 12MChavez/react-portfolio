@@ -6,7 +6,12 @@ import Footer from "../components/Footer";
 import { Columns } from "react-bulma-components";
 //for each element in projectData, render a Project component with element of projectData
 const Portfolio = projectData && (
-  <div>
+  <div
+    style={{
+      marginTop: "10px",
+      background: "#7ebc89",
+    }}
+  >
     <Columns
       desktop={{
         narrow: false,

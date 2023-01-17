@@ -4993,6 +4993,7 @@ print {
 
 @media screen and (min-width:769px),
 print {
+
     .field-label {
         flex-basis: 0;
         flex-grow: 1;
@@ -5027,6 +5028,8 @@ print {
 
 @media screen and (min-width:769px),
 print {
+
+
     .field-body {
         display: flex;
         flex-basis: 0;
@@ -5472,6 +5475,32 @@ print {
 }
 
 @media screen and (max-width:768px) {
+    .less-padding {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .skillsHeader {
+        font-size: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills {
+        font-size: 20px;
+        list-style-type: none;
+        align-content: center;
+    }
+
+    .input.is-small {
+        width: "70%";
+    }
+
+    .download-msg {
+        font-size: 20px;
+    }
+
     .level-item:not(:last-child) {
         margin-bottom: .75rem
     }

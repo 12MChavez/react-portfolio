@@ -4,59 +4,110 @@ import FooterC from "../components/Footer";
 import {
   Heading,
   Columns,
+  Content,
   Box,
   Block,
-  Notification,
   Image,
 } from "react-bulma-components";
 
 const Resume = (
-  <div>
-    <Columns>
-      <Columns.Column offset={1} size={4}></Columns.Column>
-    </Columns>
-    <Columns>
+  <div
+    style={{
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginTop: "10px",
+      background: "#7ebc89",
+    }}
+  >
+    <Columns
+      desktop={{
+        narrow: false,
+        offset: 4,
+        size: 4,
+      }}
+      fullhd={{
+        narrow: false,
+        offset: 0,
+        size: 3,
+      }}
+      mobile={{
+        narrow: false,
+        offset: 2,
+        size: 8,
+        textAlign: "center",
+        textSize: 3,
+      }}
+      tablet={{
+        narrow: false,
+        offset: 3,
+        size: 6,
+      }}
+      widescreen={{
+        narrow: false,
+        offset: 5,
+        size: 2,
+      }}
+    >
       <Columns.Column size={4} offset={1}>
-        <Notification color="primary">
-          <Heading size={5}>Skills: </Heading>
+        <Box>
+          <a href={require("../assets/resume.pdf")} download>
+            <Block>
+              <Image
+                alt="resume-image"
+                src={require("../assets/images/resume.jpg")}
+              />
+            </Block>
+          </a>
+          <Block className="download-msg">
+            Click image to download a copy of my resume.
+          </Block>
+        </Box>
+
+        <Heading
+          className="skillsHeader"
+          mobile={{}}
+          desktop={{
+            only: true,
+            display: "flex",
+            textAlign: "center",
+          }}
+          widescreen={{ display: "inline" }}
+        >
+          Here are some technologies I have worked with:
+        </Heading>
+        <Content
+          size={5}
+          desktop={{
+            only: true,
+            display: "flex",
+            textAlign: "center",
+          }}
+          widescreen={{ display: "inline" }}
+        >
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Liquid</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>Bulma</li>
-            <li>Git</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>mysql</li>
-            <li>Sequelize</li>
-            <li>NoSQL</li>
-            <li>MongoDB</li>
-            <li>Insomnia</li>
-            <li>TDD</li>
-            <li>React.js</li>
-            <li>Redux</li>
+            <li className="skills">HTML</li>
+            <li className="skills">CSS</li>
+            <li className="skills">JavaScript</li>
+            <li className="skills">Liquid</li>
+            <li className="skills">jQuery</li>
+            <li className="skills">Bootstrap</li>
+            <li className="skills">Bulma</li>
+            <li className="skills">Git</li>
+            <li className="skills">Python</li>
+            <li className="skills">Node.js</li>
+            <li className="skills">Express.js</li>
+            <li className="skills">mysql</li>
+            <li className="skills">Sequelize</li>
+            <li className="skills">NoSQL</li>
+            <li className="skills">MongoDB</li>
+            <li className="skills">Insomnia</li>
+            <li className="skills">TDD</li>
+            <li className="skills">React.js</li>
+            <li className="skills">Redux</li>
           </ul>
-        </Notification>
+        </Content>
       </Columns.Column>
-      <Columns.Column size={4} offset={1}>
-        <Notification color="primary">
-          <Box>
-            <a href={require("../assets/resume.pdf")} download>
-              <Block>
-                <Image
-                  alt="resume-image"
-                  src={require("../assets/images/resume.jpg")}
-                />
-              </Block>
-            </a>
-            <Block>Click image to download a copy of my resume.</Block>
-          </Box>
-        </Notification>
-      </Columns.Column>
+      <Columns.Column size={4} offset={1}></Columns.Column>
     </Columns>
 
     <FooterC />

@@ -1,6 +1,6 @@
 import React from "react";
 import "../bulma/css/bulma.min.css";
-import { Container, Form, Button } from "react-bulma-components";
+import { Container, Form, Button, Columns } from "react-bulma-components";
 import FooterC from "../components/Footer";
 import validator from "validator";
 
@@ -77,10 +77,15 @@ function sendEmail() {
 }
 
 const Contact = (
-  <div>
+  <div
+    style={{
+      marginTop: "10px",
+      background: "#7ebc89",
+    }}
+  >
     <Container onChange={() => showSubmit()}>
       <Form.Field>
-        <Form.Label>Name: </Form.Label>
+        <Form.Label style={{ marginTop: "15px" }}>Name: </Form.Label>
         <Form.Control>
           <Form.Input
             id="name"
@@ -107,7 +112,7 @@ const Contact = (
             value={msgValue}
             onChange={(evt) => setValueAdded(evt)}
           />
-          <Form.Help color="danger">
+          <Form.Help>
             Submit button will show when form completed with name, message, and
             valid email.
           </Form.Help>
@@ -123,6 +128,7 @@ const Contact = (
         </Form.Control>
       </Form.Field>
     </Container>
+
     <FooterC />
   </div>
 );
