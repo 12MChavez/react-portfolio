@@ -1,27 +1,28 @@
 const projectData = [
   {
     key: "1",
-    projectTitle: "project1",
-    projectImage: "test2",
-    projectImageAttr: "imageAttr1",
-    projectGithub: "https://github.com/",
-    projectDeployedURL: "https://google.com/",
+    projectTitle: "password generator",
+    projectImage: "password-generator",
+    projectImageAttr: "password generator image",
+    projectGithub: "https://github.com/12MChavez/Generate_Password",
+    projectDeployedURL: "https://12mchavez.github.io/Generate_Password/",
   },
   {
     key: "2",
-    projectTitle: "project2",
-    projectImage: "test2",
-    projectImageAttr: "imageAttr2",
-    projectGithub: "https://github.com/",
-    projectDeployedURL: "https://google.com/",
+    projectTitle: "pwa editor",
+    projectImage: "pwa-editor",
+    projectImageAttr: "pwa editor image",
+    projectGithub: "https://github.com/12MChavez/PWA-text-Editor",
+    projectDeployedURL: "https://text-editor1122.herokuapp.com/",
   },
   {
     key: "3",
-    projectTitle: "project3",
-    projectImage: "test2",
-    projectImageAttr: "imageAttr3",
-    projectGithub: "https://github.com/",
-    projectDeployedURL: "https://google.com/",
+    projectTitle: "social network",
+    projectImage: "social-network",
+    projectImageAttr: "social network image",
+    projectGithub: "https://github.com/12MChavez/Social-Network-API",
+    projectDeployedURL:
+      "https://watch.screencastify.com/v/LxeC7hiyYh8mHxoh6kKX",
   },
 ];
 export default projectData;
