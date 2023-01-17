@@ -20,7 +20,7 @@ Project is created with:
 
 ## App
 
-- [Deployed Link](https://watch.screencastify.com/v/VBMmuioQma0EfAzicbvs)
+- [Deployed Link](https://react-personal-portfolio23.herokuapp.com/)
 
 - App Screenshot
 
