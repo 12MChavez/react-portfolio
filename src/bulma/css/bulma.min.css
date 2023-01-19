@@ -33,6 +33,11 @@
     color: "#212529" !important;
 }
 
+.skillsUl {
+    margin-left: 200px !important;
+    list-style-type: none !important;
+}
+
 .button:active,
 .button:focus,
 .file-cta:active,
@@ -2248,11 +2253,7 @@ fieldset[disabled] .button {
         max-width: 960px
     }
 
-    .skillsUl {
 
-        margin: "64px"
-
-    }
 }
 
 @media screen and (max-width:1215px) {
@@ -11436,6 +11437,12 @@ print {
     .has-text-centered-desktop {
         text-align: center !important
     }
+
+    .skillsUl {
+        margin: 0px;
+    }
+
+
 }
 
 @media screen and (min-width:1024px) and (max-width:1215px) {
@@ -11443,11 +11450,7 @@ print {
         text-align: center !important
     }
 
-    .skillsUl {
 
-        margin: "0px"
-
-    }
 }
 
 @media screen and (min-width:1216px) {
@@ -11455,11 +11458,7 @@ print {
         text-align: center !important
     }
 
-    .skillsUl {
 
-        margin: "0px"
-
-    }
 }
 
 @media screen and (min-width:1216px) and (max-width:1407px) {
@@ -11467,11 +11466,7 @@ print {
         text-align: center !important
     }
 
-    .skillsUl {
 
-        margin: "0px"
-
-    }
 }
 
 @media screen and (min-width:1408px) {
@@ -11479,11 +11474,7 @@ print {
         text-align: center !important
     }
 
-    .skillsUl {
 
-        margin: "0px"
-
-    }
 }
 
 @media screen and (max-width:768px) {
@@ -11497,6 +11488,7 @@ print {
     .has-text-justified-tablet {
         text-align: justify !important
     }
+
 }
 
 @media screen and (min-width:769px) and (max-width:1023px) {

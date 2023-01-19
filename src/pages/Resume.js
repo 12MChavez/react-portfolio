@@ -8,6 +8,7 @@ import {
   Box,
   Block,
   Image,
+  Notification,
 } from "react-bulma-components";
 
 const Resume = (
@@ -83,27 +84,11 @@ const Resume = (
           }}
           widescreen={{ display: "inline" }}
         >
-          <ul style={{ margin: "30px" }} className="skillsUl">
-            <li className="skills">HTML</li>
-            <li className="skills">CSS</li>
-            <li className="skills">JavaScript</li>
-            <li className="skills">Liquid</li>
-            <li className="skills">jQuery</li>
-            <li className="skills">Bootstrap</li>
-            <li className="skills">Bulma</li>
-            <li className="skills">Git</li>
-            <li className="skills">Python</li>
-            <li className="skills">Node.js</li>
-            <li className="skills">Express.js</li>
-            <li className="skills">MySQL</li>
-            <li className="skills">Sequelize</li>
-            <li className="skills">NoSQL</li>
-            <li className="skills">MongoDB</li>
-            <li className="skills">Insomnia</li>
-            <li className="skills">TDD</li>
-            <li className="skills">React.js</li>
-            <li className="skills">Redux</li>
-          </ul>
+          <div class="notification">
+            HTML | CSS | JavaScript | Liquid | jQuery | Bootstrap | Bulma | Git
+            | Python | Node.js | Express.js | MySQL | Sequelize | NoSQL |
+            MongoDB | Insomnia | TDD | React.js | Redux
+          </div>
         </Content>
       </Columns.Column>
       <Columns.Column size={4} offset={1}></Columns.Column>
