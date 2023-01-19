@@ -84,7 +84,7 @@ const Resume = (
           }}
           widescreen={{ display: "inline" }}
         >
-          <div class="notification">
+          <div class="notification" style={{ background: "#f4a261" }}>
             HTML | CSS | JavaScript | Liquid | jQuery | Bootstrap | Bulma | Git
             | Python | Node.js | Express.js | MySQL | Sequelize | NoSQL |
             MongoDB | Insomnia | TDD | React.js | Redux
