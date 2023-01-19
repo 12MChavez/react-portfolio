@@ -20,7 +20,11 @@ const Nav = () => {
   }
   return (
     <div>
-      <Navbar>
+      <Navbar
+        style={{
+          background: "#e9c46a",
+        }}
+      >
         <Navbar.Brand>
           <Heading size={3} subtitle>
             Melissa Chavez

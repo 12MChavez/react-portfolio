@@ -1,6 +1,6 @@
 import React from "react";
 import "../bulma/css/bulma.min.css";
-import { Container, Form, Button, Columns } from "react-bulma-components";
+import { Container, Form, Button } from "react-bulma-components";
 import FooterC from "../components/Footer";
 import validator from "validator";
 
@@ -80,7 +80,7 @@ const Contact = (
   <div
     style={{
       marginTop: "10px",
-      background: "#7ebc89",
+      // background: "#7ebc89",
     }}
   >
     <Container onChange={() => showSubmit()}>

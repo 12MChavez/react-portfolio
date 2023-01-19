@@ -29,6 +29,10 @@
     vertical-align: top
 }
 
+.font-isBlack {
+    color: "#212529" !important;
+}
+
 .button:active,
 .button:focus,
 .file-cta:active,
@@ -402,7 +406,7 @@ th:not([align]) {
 }
 
 html {
-    background-color: #fff;
+    background-color: #f4a261;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -442,7 +446,7 @@ pre {
 }
 
 body {
-    color: #4a4a4a;
+    color: #363636;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5
@@ -2242,6 +2246,12 @@ fieldset[disabled] .button {
 @media screen and (min-width:1024px) {
     .container {
         max-width: 960px
+    }
+
+    .skillsUl {
+
+        margin: "64px"
+
     }
 }
 
@@ -5487,6 +5497,8 @@ print {
         margin-right: auto;
     }
 
+
+
     .skills {
         font-size: 20px;
         list-style-type: none;
@@ -6845,16 +6857,16 @@ a.navbar-item {
     cursor: pointer
 }
 
-.navbar-link.is-active,
+/* .navbar-link.is-active,
 .navbar-link:focus,
 .navbar-link:focus-within,
 .navbar-link:hover,
 a.navbar-item.is-active,
 a.navbar-item:focus,
-a.navbar-item:focus-within,
+a.navbar-item:focus-within, */
 a.navbar-item:hover {
     background-color: #fafafa;
-    color: #485fc7
+    color: #264653
 }
 
 .navbar-item {
@@ -11430,11 +11442,23 @@ print {
     .has-text-centered-desktop-only {
         text-align: center !important
     }
+
+    .skillsUl {
+
+        margin: "0px"
+
+    }
 }
 
 @media screen and (min-width:1216px) {
     .has-text-centered-widescreen {
         text-align: center !important
+    }
+
+    .skillsUl {
+
+        margin: "0px"
+
     }
 }
 
@@ -11442,11 +11466,23 @@ print {
     .has-text-centered-widescreen-only {
         text-align: center !important
     }
+
+    .skillsUl {
+
+        margin: "0px"
+
+    }
 }
 
 @media screen and (min-width:1408px) {
     .has-text-centered-fullhd {
         text-align: center !important
+    }
+
+    .skillsUl {
+
+        margin: "0px"
+
     }
 }
 

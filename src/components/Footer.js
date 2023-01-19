@@ -7,13 +7,13 @@ const FooterC = () => {
         <Hero.Header renderAs="header" />
 
         <Hero.Footer>
-          <Footer>
+          <Footer style={{ background: "#f4a261" }}>
             <Container>
-              <Content style={{ textAlign: "center" }}>
+              <Content style={{ textAlign: "center", background: "#e9c46a" }}>
                 <div>
                   <strong>
                     <p className="navbar-item">
-                      Made with love, react, and bulma.
+                      Made with love, React, and bulma.
                     </p>
                   </strong>{" "}
                   <a

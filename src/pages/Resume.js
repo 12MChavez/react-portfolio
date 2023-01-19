@@ -16,7 +16,6 @@ const Resume = (
       marginLeft: "auto",
       marginRight: "auto",
       marginTop: "10px",
-      background: "#7ebc89",
     }}
   >
     <Columns
@@ -84,7 +83,7 @@ const Resume = (
           }}
           widescreen={{ display: "inline" }}
         >
-          <ul>
+          <ul style={{ margin: "30px" }} className="skillsUl">
             <li className="skills">HTML</li>
             <li className="skills">CSS</li>
             <li className="skills">JavaScript</li>
@@ -96,7 +95,7 @@ const Resume = (
             <li className="skills">Python</li>
             <li className="skills">Node.js</li>
             <li className="skills">Express.js</li>
-            <li className="skills">mysql</li>
+            <li className="skills">MySQL</li>
             <li className="skills">Sequelize</li>
             <li className="skills">NoSQL</li>
             <li className="skills">MongoDB</li>

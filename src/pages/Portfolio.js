@@ -9,7 +9,6 @@ const Portfolio = projectData && (
   <div
     style={{
       marginTop: "10px",
-      background: "#7ebc89",
     }}
   >
     <Columns

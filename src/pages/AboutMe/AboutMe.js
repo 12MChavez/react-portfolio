@@ -12,7 +12,6 @@ const AboutMe = (
   <div
     style={{
       marginTop: "10px",
-      background: "#7ebc89",
     }}
   >
     <Columns
@@ -57,8 +56,8 @@ const AboutMe = (
             <p>
               My name is Melissa. I am what some might call a Jill of all
               trades. I did my undergrad at the University of Georgia, and grad
-              school at Mercer University. Recently I left the classroom and
-              started coding. Keep an eye out for updates to my portfolio.
+              school at Mercer University. Recently I started coding. Keep an
+              eye out for updates to my portfolio.
             </p>
           </Container>
         </Hero.Body>
